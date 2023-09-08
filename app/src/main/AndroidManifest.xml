@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.deutschlernen">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.android.deutschlernen.fruits"
+            android:exported="false"
+            android:label="Das Obst"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+        <activity
+            android:name="com.example.android.deutschlernen.kleidung"
+            android:exported="true"
+            android:label="Die kleidung"
+            android:parentActivityName=".MainActivity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.deutschlernen.MainActivity"/>
+
+        <activity
+            android:name="com.example.android.deutschlernen.Schoolsup"
+            android:exported="true"
+            android:label="Die Schulsachen"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name="com.example.android.deutschlernen.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.android.deutschlernen.Veggie"
+            android:exported="true"
+            android:label="Das Gemüse"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name="com.example.android.deutschlernen.Arbeit"
+            android:exported="true"
+            android:label="Die Berufe"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+
+        <activity android:name="com.example.android.deutschlernen.animals"
+           android:label="@string/category_phrases"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.example.android.deutschlernen.colors"
+            android:label="Die Farben"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.example.android.deutschlernen.family"
+            android:label="Die Familie"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.example.android.deutschlernen.Numbers"
+            android:label="Die Zahlen"
+            android:parentActivityName="com.example.android.deutschlernen.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.deutschlernen.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.example.android.deutschlernen.splach_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
